@@ -1,0 +1,32 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto8
+      docker: 18
+  pre_build:
+    commands:
+      - echo "Pre_build"
+      - echo "Logging in to Amazon ECR"
+      - $(aws ecr get-login  --no-include-email --region us-east-1)
+  build:
+    commands:
+      - echo "Build"
+      - echo "Entered build phase"
+      - echo "Building Java application"
+      - cd Account-MS
+      - mvn -DskipTests clean package
+      - docker build -t account-ms-registry:latest .
+      - docker tag account-ms-registry:latest 234825976347.dkr.ecr.us-east-1.amazonaws.com/account-ms-registry:latest
+
+  post_build:
+    commands:
+      - echo "Post_build"
+      - docker push 234825976347.dkr.ecr.us-east-1.amazonaws.com/account-ms-registry:latest
+      - printf '[{"name":"account-ms-container","imageUri":"%s"}]' 234825976347.dkr.ecr.us-east-1.amazonaws.com/account-ms-registry:latest > taskdefinition.json
+      - cat taskdefinition.json
+
+artifacts:
+  files:
+      - Account-MS/taskdefinition.json

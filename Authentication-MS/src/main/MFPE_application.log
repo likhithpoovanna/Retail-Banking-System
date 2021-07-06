@@ -1,0 +1,49 @@
+2021-05-04 09:08:11.314  INFO 11860 --- [restartedMain] c.c.a.AuthenticationApplication          : Starting AuthenticationApplication using Java 15.0.1 on DESKTOP-UQUME0H with PID 11860 (F:\MFPE\Authentication\target\classes started by dell in F:\MFPE\Authentication)
+2021-05-04 09:08:11.330  INFO 11860 --- [restartedMain] c.c.a.AuthenticationApplication          : No active profile set, falling back to default profiles: default
+2021-05-04 09:08:12.201  INFO 11860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-04 09:08:12.203  INFO 11860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-04 09:08:21.950  INFO 11860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-05-04 09:08:22.160  INFO 11860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 195 ms. Found 1 JPA repository interfaces.
+2021-05-04 09:08:24.108  INFO 11860 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@24f29cf2' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-04 09:08:24.119  INFO 11860 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-04 09:08:26.663  INFO 11860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2021-05-04 09:08:26.724  INFO 11860 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-04 09:08:26.725  INFO 11860 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-05-04 09:08:27.088  INFO 11860 --- [restartedMain] o.a.c.c.C.[.[localhost].[/auth-ms]       : Initializing Spring embedded WebApplicationContext
+2021-05-04 09:08:27.088  INFO 11860 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 14884 ms
+2021-05-04 09:08:27.275  INFO 11860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-04 09:08:27.758  INFO 11860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-04 09:08:27.770  INFO 11860 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:auth-ms'
+2021-05-04 09:08:29.723  INFO 11860 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-04 09:08:30.164  INFO 11860 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-04 09:08:30.303  WARN 11860 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-04 09:08:30.659  INFO 11860 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-05-04 09:08:31.597  INFO 11860 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-04 09:08:32.449  INFO 11860 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-04 09:08:33.247  INFO 11860 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/auth-ms/login'] with []
+2021-05-04 09:08:33.248  INFO 11860 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/auth-ms/swagger-ui.html/**'] with []
+2021-05-04 09:08:33.248  INFO 11860 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/h2-console/**'] with []
+2021-05-04 09:08:33.249  INFO 11860 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/validateToken'] with []
+2021-05-04 09:08:33.249  INFO 11860 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/role/**'] with []
+2021-05-04 09:08:33.369  INFO 11860 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55c723ac, org.springframework.security.web.context.SecurityContextPersistenceFilter@96d82e3, org.springframework.security.web.header.HeaderWriterFilter@23c40e68, org.springframework.security.web.authentication.logout.LogoutFilter@40b2f5ca, com.cognizant.authentication.service.JwtRequestFilter@1654cb23, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7dfb3b58, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29fa1879, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4436c005, org.springframework.security.web.session.SessionManagementFilter@3c1b38b, org.springframework.security.web.access.ExceptionTranslationFilter@3df7bebf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@424aae51]
+2021-05-04 09:08:33.507  INFO 11860 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-04 09:08:34.091  INFO 11860 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-04 09:08:34.689 DEBUG 11860 --- [task-1] org.hibernate.SQL                        : drop table if exists appuser CASCADE 
+2021-05-04 09:08:34.731 DEBUG 11860 --- [task-1] org.hibernate.SQL                        : create table appuser (userid varchar(20) not null, auth_token varchar(255), password varchar(255), role varchar(255), username varchar(20), primary key (userid))
+2021-05-04 09:08:34.750  INFO 11860 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-04 09:08:34.783  INFO 11860 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-04 09:08:34.948  INFO 11860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path '/auth-ms'
+2021-05-04 09:08:34.950  INFO 11860 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-04 09:08:35.014  INFO 11860 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-04 09:08:35.077  INFO 11860 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-04 09:08:35.409  INFO 11860 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-05-04 09:08:35.851  INFO 11860 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-05-04 09:08:35.868  INFO 11860 --- [restartedMain] c.c.a.AuthenticationApplication          : Started AuthenticationApplication in 26.942 seconds (JVM running for 32.522)
+2021-05-04 09:08:51.101  INFO 11860 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-05-04 09:08:51.295  INFO 11860 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-04 09:08:51.297  INFO 11860 --- [RMI TCP Connection(2)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-05-04 09:08:51.300 DEBUG 11860 --- [RMI TCP Connection(2)-127.0.0.1] org.hibernate.SQL                        : drop table if exists appuser CASCADE 
+2021-05-04 09:08:51.354  INFO 11860 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-04 09:08:51.358  WARN 11860 --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-05-04 09:08:51.359  INFO 11860 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-05-04 09:08:51.364  INFO 11860 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

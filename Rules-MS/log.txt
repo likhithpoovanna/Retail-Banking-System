@@ -1,0 +1,163 @@
+2021-05-06 09:05:44.483  INFO 9048 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2021-05-06 09:05:50.514  INFO 9048 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2021-05-06 09:05:50.516  WARN 9048 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/rules-ms/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2021-05-06 09:05:50.528  INFO 9048 --- [restartedMain] com.cognizant.rules.RulesMsApplication   : No active profile set, falling back to default profiles: default
+2021-05-06 09:06:00.819  INFO 9048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-05-06 09:06:01.767  INFO 9048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 283ms. Found 0 JPA repository interfaces.
+2021-05-06 09:06:04.245  INFO 9048 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ef0399e6-a812-3d90-b38b-e634968b0a3b
+2021-05-06 09:06:14.957  INFO 9048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9996 (http)
+2021-05-06 09:06:15.154  INFO 9048 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-06 09:06:15.156  INFO 9048 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-06 09:06:16.990  INFO 9048 --- [restartedMain] o.a.c.c.C.[.[localhost].[/rules-ms]      : Initializing Spring embedded WebApplicationContext
+2021-05-06 09:06:17.252  INFO 9048 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 25905 ms
+2021-05-06 09:06:17.735  INFO 9048 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-06 09:06:23.986  INFO 9048 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-06 09:06:24.578  INFO 9048 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:c6b26d91-7223-42a1-a9de-7f4edfb0f5dd'
+2021-05-06 09:06:27.143  INFO 9048 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 09:06:30.327  INFO 9048 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-06 09:06:31.368  INFO 9048 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2021-05-06 09:06:33.891  WARN 9048 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-06 09:06:34.156  INFO 9048 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-05-06 09:06:35.818  INFO 9048 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-06 09:06:36.345  INFO 9048 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-06 09:06:36.676  WARN 9048 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-05-06 09:06:36.677  INFO 9048 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-05-06 09:06:36.701  WARN 9048 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-05-06 09:06:36.703  INFO 9048 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-05-06 09:06:39.477  WARN 9048 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-05-06 09:06:40.445  INFO 9048 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-06 09:06:40.484  INFO 9048 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-06 09:06:45.686  INFO 9048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9996 (http) with context path '/rules-ms'
+2021-05-06 09:06:47.155  INFO 9048 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-06 09:06:47.287  INFO 9048 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-06 09:06:47.724  INFO 9048 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-06 09:06:49.007  INFO 9048 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-05-06 09:06:49.009  INFO 9048 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-05-06 09:06:49.044  INFO 9048 --- [restartedMain] com.cognizant.rules.RulesMsApplication   : Started RulesMsApplication in 77.334 seconds (JVM running for 84.169)
+2021-05-06 09:06:49.940  INFO 9048 --- [http-nio-9996-exec-1] o.a.c.c.C.[.[localhost].[/rules-ms]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 09:06:49.941  INFO 9048 --- [http-nio-9996-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-06 09:06:49.955  INFO 9048 --- [http-nio-9996-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2021-05-06 09:12:14.290  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:12:14.836  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:12:14.836  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:12:14.836  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:12:14.947  WARN 9048 --- [http-nio-9996-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:15.022  WARN 9048 --- [http-nio-9996-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:22.690  INFO 9048 --- [http-nio-9996-exec-9] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:12:22.691  INFO 9048 --- [http-nio-9996-exec-9] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:12:22.691  INFO 9048 --- [http-nio-9996-exec-9] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:12:22.692  INFO 9048 --- [http-nio-9996-exec-9] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:12:22.692  WARN 9048 --- [http-nio-9996-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:22.695  WARN 9048 --- [http-nio-9996-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:25.332  INFO 9048 --- [http-nio-9996-exec-2] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:12:25.337  INFO 9048 --- [http-nio-9996-exec-2] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:12:25.340  INFO 9048 --- [http-nio-9996-exec-2] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:12:25.341  INFO 9048 --- [http-nio-9996-exec-2] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:12:25.343  WARN 9048 --- [http-nio-9996-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:25.346  WARN 9048 --- [http-nio-9996-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:27.170  INFO 9048 --- [http-nio-9996-exec-1] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:12:27.174  INFO 9048 --- [http-nio-9996-exec-1] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:12:27.174  INFO 9048 --- [http-nio-9996-exec-1] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:12:27.174  INFO 9048 --- [http-nio-9996-exec-1] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:12:27.175  WARN 9048 --- [http-nio-9996-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:27.178  WARN 9048 --- [http-nio-9996-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:30.571  INFO 9048 --- [http-nio-9996-exec-4] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:12:30.572  INFO 9048 --- [http-nio-9996-exec-4] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:12:30.573  INFO 9048 --- [http-nio-9996-exec-4] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:12:30.574  INFO 9048 --- [http-nio-9996-exec-4] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:12:30.576  WARN 9048 --- [http-nio-9996-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:30.583  WARN 9048 --- [http-nio-9996-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:31.533  INFO 9048 --- [http-nio-9996-exec-3] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:12:31.537  INFO 9048 --- [http-nio-9996-exec-3] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:12:31.538  INFO 9048 --- [http-nio-9996-exec-3] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:12:31.539  INFO 9048 --- [http-nio-9996-exec-3] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:12:31.540  WARN 9048 --- [http-nio-9996-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:31.544  WARN 9048 --- [http-nio-9996-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:32.082  INFO 9048 --- [http-nio-9996-exec-10] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:12:32.083  INFO 9048 --- [http-nio-9996-exec-10] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:12:32.084  INFO 9048 --- [http-nio-9996-exec-10] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:12:32.084  INFO 9048 --- [http-nio-9996-exec-10] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:12:32.085  WARN 9048 --- [http-nio-9996-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:32.090  WARN 9048 --- [http-nio-9996-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:32.294  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:12:32.295  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:12:32.296  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:12:32.297  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:12:32.300  WARN 9048 --- [http-nio-9996-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:32.305  WARN 9048 --- [http-nio-9996-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:47.292  INFO 9048 --- [http-nio-9996-exec-8] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:12:47.293  INFO 9048 --- [http-nio-9996-exec-8] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:12:47.293  INFO 9048 --- [http-nio-9996-exec-8] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:12:47.293  INFO 9048 --- [http-nio-9996-exec-8] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:12:47.294  WARN 9048 --- [http-nio-9996-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:47.296  WARN 9048 --- [http-nio-9996-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:53.452  INFO 9048 --- [http-nio-9996-exec-2] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:12:53.453  INFO 9048 --- [http-nio-9996-exec-2] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:12:53.454  INFO 9048 --- [http-nio-9996-exec-2] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:12:53.454  INFO 9048 --- [http-nio-9996-exec-2] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:12:58.640  INFO 9048 --- [http-nio-9996-exec-1] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:12:58.641  INFO 9048 --- [http-nio-9996-exec-1] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:12:58.642  INFO 9048 --- [http-nio-9996-exec-1] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:12:58.642  INFO 9048 --- [http-nio-9996-exec-1] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:12:58.643  WARN 9048 --- [http-nio-9996-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:12:58.649  WARN 9048 --- [http-nio-9996-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2021-05-06 09:13:04.308  INFO 9048 --- [http-nio-9996-exec-6] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:13:04.314  INFO 9048 --- [http-nio-9996-exec-6] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:13:04.315  INFO 9048 --- [http-nio-9996-exec-6] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:13:04.316  INFO 9048 --- [http-nio-9996-exec-6] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:13:08.880  INFO 9048 --- [http-nio-9996-exec-3] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:13:08.884  INFO 9048 --- [http-nio-9996-exec-3] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:13:08.885  INFO 9048 --- [http-nio-9996-exec-3] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:13:08.885  INFO 9048 --- [http-nio-9996-exec-3] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:13:16.918  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:13:16.923  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:13:16.927  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:13:16.927  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:13:23.126  INFO 9048 --- [http-nio-9996-exec-8] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:13:23.129  INFO 9048 --- [http-nio-9996-exec-8] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:13:23.130  INFO 9048 --- [http-nio-9996-exec-8] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:13:23.132  INFO 9048 --- [http-nio-9996-exec-8] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:14:00.144  INFO 9048 --- [http-nio-9996-exec-2] c.c.rules.controller.RulesController     : START : Get Service Charge
+2021-05-06 09:14:00.144  INFO 9048 --- [http-nio-9996-exec-2] c.c.rules.controller.RulesController     : END : Get Service Charge
+2021-05-06 09:14:00.145  INFO 9048 --- [http-nio-9996-exec-2] c.c.rules.service.RulesServiceImpl       : START : Calculate Service Charge
+2021-05-06 09:14:00.145  INFO 9048 --- [http-nio-9996-exec-2] c.c.rules.service.RulesServiceImpl       : END : Calculate Service Charge
+2021-05-06 09:14:08.285  INFO 9048 --- [http-nio-9996-exec-4] c.c.rules.controller.RulesController     : START : Get Service Charge
+2021-05-06 09:14:08.286  INFO 9048 --- [http-nio-9996-exec-4] c.c.rules.controller.RulesController     : END : Get Service Charge
+2021-05-06 09:14:08.287  INFO 9048 --- [http-nio-9996-exec-4] c.c.rules.service.RulesServiceImpl       : START : Calculate Service Charge
+2021-05-06 09:14:08.287  INFO 9048 --- [http-nio-9996-exec-4] c.c.rules.service.RulesServiceImpl       : END : Calculate Service Charge
+2021-05-06 09:14:10.483  INFO 9048 --- [http-nio-9996-exec-6] c.c.rules.controller.RulesController     : START : Get Service Charge
+2021-05-06 09:14:10.484  INFO 9048 --- [http-nio-9996-exec-6] c.c.rules.controller.RulesController     : END : Get Service Charge
+2021-05-06 09:14:10.485  INFO 9048 --- [http-nio-9996-exec-6] c.c.rules.service.RulesServiceImpl       : START : Calculate Service Charge
+2021-05-06 09:14:10.486  INFO 9048 --- [http-nio-9996-exec-6] c.c.rules.service.RulesServiceImpl       : END : Calculate Service Charge
+2021-05-06 09:14:15.941  INFO 9048 --- [http-nio-9996-exec-10] c.c.rules.controller.RulesController     : START : Get Service Charge
+2021-05-06 09:14:15.942  INFO 9048 --- [http-nio-9996-exec-10] c.c.rules.controller.RulesController     : END : Get Service Charge
+2021-05-06 09:14:15.943  INFO 9048 --- [http-nio-9996-exec-10] c.c.rules.service.RulesServiceImpl       : START : Calculate Service Charge
+2021-05-06 09:14:15.943  INFO 9048 --- [http-nio-9996-exec-10] c.c.rules.service.RulesServiceImpl       : END : Calculate Service Charge
+2021-05-06 09:14:28.924  INFO 9048 --- [http-nio-9996-exec-5] c.c.rules.controller.RulesController     : START : Get Service Charge
+2021-05-06 09:14:28.925  INFO 9048 --- [http-nio-9996-exec-5] c.c.rules.controller.RulesController     : END : Get Service Charge
+2021-05-06 09:14:28.925  INFO 9048 --- [http-nio-9996-exec-5] c.c.rules.service.RulesServiceImpl       : START : Calculate Service Charge
+2021-05-06 09:14:28.926  INFO 9048 --- [http-nio-9996-exec-5] c.c.rules.service.RulesServiceImpl       : END : Calculate Service Charge
+2021-05-06 09:14:36.635  INFO 9048 --- [http-nio-9996-exec-9] c.c.rules.controller.RulesController     : START : Get Service Charge
+2021-05-06 09:14:36.636  INFO 9048 --- [http-nio-9996-exec-9] c.c.rules.controller.RulesController     : END : Get Service Charge
+2021-05-06 09:14:36.637  INFO 9048 --- [http-nio-9996-exec-9] c.c.rules.service.RulesServiceImpl       : START : Calculate Service Charge
+2021-05-06 09:14:36.637  INFO 9048 --- [http-nio-9996-exec-9] c.c.rules.service.RulesServiceImpl       : END : Calculate Service Charge
+2021-05-06 09:14:42.966  INFO 9048 --- [http-nio-9996-exec-1] c.c.rules.controller.RulesController     : START : Get Service Charge
+2021-05-06 09:14:42.967  INFO 9048 --- [http-nio-9996-exec-1] c.c.rules.controller.RulesController     : END : Get Service Charge
+2021-05-06 09:14:42.967  INFO 9048 --- [http-nio-9996-exec-1] c.c.rules.service.RulesServiceImpl       : START : Calculate Service Charge
+2021-05-06 09:14:42.967  INFO 9048 --- [http-nio-9996-exec-1] c.c.rules.service.RulesServiceImpl       : END : Calculate Service Charge
+2021-05-06 09:20:27.646  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:20:27.648  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:20:27.649  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:20:27.650  INFO 9048 --- [http-nio-9996-exec-7] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:20:27.776  INFO 9048 --- [http-nio-9996-exec-5] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:20:27.777  INFO 9048 --- [http-nio-9996-exec-5] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:20:27.777  INFO 9048 --- [http-nio-9996-exec-5] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:20:27.778  INFO 9048 --- [http-nio-9996-exec-5] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:20:39.414  INFO 9048 --- [http-nio-9996-exec-8] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:20:39.558  INFO 9048 --- [http-nio-9996-exec-8] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:20:39.558  INFO 9048 --- [http-nio-9996-exec-8] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:20:39.559  INFO 9048 --- [http-nio-9996-exec-8] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
+2021-05-06 09:20:39.567  INFO 9048 --- [http-nio-9996-exec-9] c.c.rules.controller.RulesController     : START : Evaluate Min Balance
+2021-05-06 09:20:39.567  INFO 9048 --- [http-nio-9996-exec-9] c.c.rules.controller.RulesController     : END : Evaluate Min Balance
+2021-05-06 09:20:39.568  INFO 9048 --- [http-nio-9996-exec-9] c.c.rules.service.RulesServiceImpl       : START : Check MinBal
+2021-05-06 09:20:39.570  INFO 9048 --- [http-nio-9996-exec-9] c.c.rules.service.RulesServiceImpl       : END : Check MinBal
